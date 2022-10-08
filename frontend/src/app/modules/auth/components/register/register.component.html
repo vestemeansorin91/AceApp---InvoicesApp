@@ -1,6 +1,21 @@
-<input [(ngModel)]="username" type="text" placeholder="username" />
-<input [(ngModel)]="fullName" type="text" placeholder="fullName" />
-<input [(ngModel)]="email" type="text" placeholder="email" />
-<input [(ngModel)]="password" type="text" placeholder="password" />
-
-<button (click)="register()">Cont nou</button>
+<div class="content">
+  <p class="title">Register to <span>Ace</span></p>
+  <p class="redirect">Already have an account ? Go to <span>login</span></p>
+  <div class="input-box">
+    <span>Username</span>
+    <input [(ngModel)]="username" type="text" placeholder="Username" />
+  </div>
+  <div class="input-box">
+    <span>Full Name</span>
+    <input [(ngModel)]="fullName" type="text" placeholder="Full Name" />
+  </div>
+  <div class="input-box">
+    <span>Email</span>
+    <input [(ngModel)]="email" type="text" placeholder="Email" />
+  </div>
+  <div class="input-box">
+    <span>Password</span>
+    <input [(ngModel)]="password" type="text" placeholder="Password" />
+  </div>
+  <button (click)="register()">Cont nou</button>
+</div>
